@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F73E56812899926F00C56AE8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E56802899926F00C56AE8 /* HomeView.swift */; };
+		F73E56832899A21100C56AE8 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E56822899A21100C56AE8 /* ProjectsView.swift */; };
 		F7DCC40128994A0A00E79FDC /* TrackWishesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC40028994A0A00E79FDC /* TrackWishesApp.swift */; };
 		F7DCC40328994A0A00E79FDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC40228994A0A00E79FDC /* ContentView.swift */; };
 		F7DCC40528994A0C00E79FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DCC40428994A0C00E79FDC /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F73E56802899926F00C56AE8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F73E56822899A21100C56AE8 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		F7DCC3FD28994A0A00E79FDC /* TrackWishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackWishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DCC40028994A0A00E79FDC /* TrackWishesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWishesApp.swift; sourceTree = "<group>"; };
 		F7DCC40228994A0A00E79FDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				F7DCC41328995E8500E79FDC /* Info.plist */,
 				F7DCC40028994A0A00E79FDC /* TrackWishesApp.swift */,
 				F7DCC40228994A0A00E79FDC /* ContentView.swift */,
+				F73E56802899926F00C56AE8 /* HomeView.swift */,
+				F73E56822899A21100C56AE8 /* ProjectsView.swift */,
 				F7DCC4112899514400E79FDC /* DataController.swift */,
 				F7DCC40E28994DAC00E79FDC /* Main.xcdatamodeld */,
 				F7DCC40428994A0C00E79FDC /* Assets.xcassets */,
@@ -145,9 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73E56832899A21100C56AE8 /* ProjectsView.swift in Sources */,
 				F7DCC41028994DAC00E79FDC /* Main.xcdatamodeld in Sources */,
 				F7DCC4122899514400E79FDC /* DataController.swift in Sources */,
 				F7DCC40328994A0A00E79FDC /* ContentView.swift in Sources */,
+				F73E56812899926F00C56AE8 /* HomeView.swift in Sources */,
 				F7DCC40128994A0A00E79FDC /* TrackWishesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

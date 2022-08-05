@@ -17,6 +17,8 @@
 		F7DCC40828994A0C00E79FDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DCC40728994A0C00E79FDC /* Preview Assets.xcassets */; };
 		F7DCC41028994DAC00E79FDC /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC40E28994DAC00E79FDC /* Main.xcdatamodeld */; };
 		F7DCC4122899514400E79FDC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC4112899514400E79FDC /* DataController.swift */; };
+		F7F86416289DAC6700F39A40 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F86415289DAC6700F39A40 /* EditItemView.swift */; };
+		F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F86417289DB41E00F39A40 /* ItemRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		F7DCC40F28994DAC00E79FDC /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		F7DCC4112899514400E79FDC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F7DCC41328995E8500E79FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7F86415289DAC6700F39A40 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		F7F86417289DB41E00F39A40 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				F7DCC40228994A0A00E79FDC /* ContentView.swift */,
 				F73E56802899926F00C56AE8 /* HomeView.swift */,
 				F73E56822899A21100C56AE8 /* ProjectsView.swift */,
+				F7F86417289DB41E00F39A40 /* ItemRowView.swift */,
+				F7F86415289DAC6700F39A40 /* EditItemView.swift */,
 				F7DCC4112899514400E79FDC /* DataController.swift */,
 				F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */,
 				F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */,
@@ -161,10 +167,12 @@
 				F7DCC41028994DAC00E79FDC /* Main.xcdatamodeld in Sources */,
 				F790259F289BB2B800262AA7 /* Project-CoreDataHelpers.swift in Sources */,
 				F7DCC4122899514400E79FDC /* DataController.swift in Sources */,
+				F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */,
 				F7DCC40328994A0A00E79FDC /* ContentView.swift in Sources */,
 				F73E56812899926F00C56AE8 /* HomeView.swift in Sources */,
 				F7DCC40128994A0A00E79FDC /* TrackWishesApp.swift in Sources */,
 				F790259D289BB0ED00262AA7 /* Item-CoreDataHelpers.swift in Sources */,
+				F7F86416289DAC6700F39A40 /* EditItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F73E56812899926F00C56AE8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E56802899926F00C56AE8 /* HomeView.swift */; };
 		F73E56832899A21100C56AE8 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E56822899A21100C56AE8 /* ProjectsView.swift */; };
+		F7667EB0289FB70A003160DD /* Binding-Onchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7667EAF289FB70A003160DD /* Binding-Onchange.swift */; };
 		F790259D289BB0ED00262AA7 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */; };
 		F790259F289BB2B800262AA7 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */; };
 		F7DCC40128994A0A00E79FDC /* TrackWishesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC40028994A0A00E79FDC /* TrackWishesApp.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		F73E56802899926F00C56AE8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F73E56822899A21100C56AE8 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		F7667EAF289FB70A003160DD /* Binding-Onchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-Onchange.swift"; sourceTree = "<group>"; };
 		F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		F7DCC3FD28994A0A00E79FDC /* TrackWishes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackWishes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				F73E56822899A21100C56AE8 /* ProjectsView.swift */,
 				F7F86417289DB41E00F39A40 /* ItemRowView.swift */,
 				F7F86415289DAC6700F39A40 /* EditItemView.swift */,
+				F7667EAF289FB70A003160DD /* Binding-Onchange.swift */,
 				F7DCC4112899514400E79FDC /* DataController.swift */,
 				F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */,
 				F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */,
@@ -165,6 +168,7 @@
 			files = (
 				F73E56832899A21100C56AE8 /* ProjectsView.swift in Sources */,
 				F7DCC41028994DAC00E79FDC /* Main.xcdatamodeld in Sources */,
+				F7667EB0289FB70A003160DD /* Binding-Onchange.swift in Sources */,
 				F790259F289BB2B800262AA7 /* Project-CoreDataHelpers.swift in Sources */,
 				F7DCC4122899514400E79FDC /* DataController.swift in Sources */,
 				F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */,

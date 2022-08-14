@@ -11,6 +11,7 @@
 		F733823C28A0489B00F75F8B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F733823B28A0489B00F75F8B /* Colors.xcassets */; };
 		F73E56812899926F00C56AE8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E56802899926F00C56AE8 /* HomeView.swift */; };
 		F73E56832899A21100C56AE8 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E56822899A21100C56AE8 /* ProjectsView.swift */; };
+		F74D855F28A836AA0082CD65 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74D855E28A836AA0082CD65 /* Sequence-Sorting.swift */; };
 		F7667EB0289FB70A003160DD /* Binding-Onchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7667EAF289FB70A003160DD /* Binding-Onchange.swift */; };
 		F790259D289BB0ED00262AA7 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */; };
 		F790259F289BB2B800262AA7 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */; };
@@ -30,6 +31,7 @@
 		F733823B28A0489B00F75F8B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F73E56802899926F00C56AE8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F73E56822899A21100C56AE8 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		F74D855E28A836AA0082CD65 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 		F7667EAF289FB70A003160DD /* Binding-Onchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-Onchange.swift"; sourceTree = "<group>"; };
 		F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				F7DCC4112899514400E79FDC /* DataController.swift */,
 				F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */,
 				F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */,
+				F74D855E28A836AA0082CD65 /* Sequence-Sorting.swift */,
 				F7DCC40E28994DAC00E79FDC /* Main.xcdatamodeld */,
 				F7DCC40428994A0C00E79FDC /* Assets.xcassets */,
 				F733823B28A0489B00F75F8B /* Colors.xcassets */,
@@ -185,6 +188,7 @@
 				F7DCC4122899514400E79FDC /* DataController.swift in Sources */,
 				F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */,
 				F7DCC40328994A0A00E79FDC /* ContentView.swift in Sources */,
+				F74D855F28A836AA0082CD65 /* Sequence-Sorting.swift in Sources */,
 				F73E56812899926F00C56AE8 /* HomeView.swift in Sources */,
 				F7DCC40128994A0A00E79FDC /* TrackWishesApp.swift in Sources */,
 				F790259D289BB0ED00262AA7 /* Item-CoreDataHelpers.swift in Sources */,

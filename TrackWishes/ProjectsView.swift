@@ -13,14 +13,18 @@ struct ProjectsView: View {
     
     @EnvironmentObject var dataController: DataController
     @Environment(\.managedObjectContext) var managedObjectContext
+    
+    @State private var showSortOrder = false
+    @State private var sortOrder = Item.SortOrder.optimized
+    
     static let openTag: String? = "Open"
     static let closedTag: String? = "Closed"
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
         projects = FetchRequest<Project>(entity: Project.entity(),
-        sortDescriptors: [
-            NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)
-        ],predicate: NSPredicate(format: "closed = %d", showClosedProjects))
+                                         sortDescriptors: [
+                                            NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)
+                                         ],predicate: NSPredicate(format: "closed = %d", showClosedProjects))
     }
     
     var body: some View {
@@ -28,8 +32,8 @@ struct ProjectsView: View {
             List {
                 ForEach(projects.wrappedValue) { project in
                     Section {
-                        ForEach(project.projectItems) { item in
-                      ItemRowView(item: item)
+                        ForEach(project.projectItems(using: sortOrder)) { item in
+                            ItemRowView(item: item)
                         }
                         .onDelete { offsets in
                             let allItems = project.projectItems
@@ -38,7 +42,7 @@ struct ProjectsView: View {
                                 dataController.delete(item)
                             }
                             // this provides you to delete immiediately from core data
-                         //   dataController.container.viewContext.processPendingChanges()
+                            //   dataController.container.viewContext.processPendingChanges()
                             dataController.save()
                         }
                         if showClosedProjects == false {
@@ -52,33 +56,53 @@ struct ProjectsView: View {
                             } label: {
                                 Label("Add New Item",systemImage: "plus")
                             }
-
+                            
                         }
                     } header: {
-                       ProjectHeaderView(project: project)
+                        ProjectHeaderView(project: project)
                     }
                 }
             }.listStyle(.insetGrouped)
-            .navigationTitle(showClosedProjects ? "Closed Projects" :  "Open Projects")
-            .toolbar {
-                if showClosedProjects == false {
-                    Button {
-                        withAnimation {
-                            let project = Project(context: managedObjectContext)
-                            project.closed = false
-                            project.creationDate = Date()
-                            dataController.save()
+                .navigationTitle(showClosedProjects ? "Closed Projects" :  "Open Projects")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        if showClosedProjects == false {
+                            Button {
+                                withAnimation {
+                                    let project = Project(context: managedObjectContext)
+                                    project.closed = false
+                                    project.creationDate = Date()
+                                    dataController.save()
+                                }
+                            } label: {
+                                Label("Add Project",systemImage: "plus")
+                            }
+                            
                         }
-                    } label: {
-                        Label("Add Project",systemImage: "plus")
                     }
-
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button {
+                            showSortOrder.toggle()
+                        } label: {
+                            Label("Sort",systemImage: "arrow.up.arrow.down")
+                        }
+                        
+                    }
+                    
                 }
-            }
+                .confirmationDialog("Sort by...", isPresented: $showSortOrder) {
+                    Button("Optimized") { sortOrder = .optimized  }
+                    Button("Creation Date") { sortOrder =  .creationDate  }
+                    Button("Title") { sortOrder = .title  }
+                    Button("Cancel",role: .cancel) { }
+                } message: {
+                    Text("Sort by something")
+                }
         }
-       
-
+        
+        
     }
+
 }
 
 struct ProjectsView_Previews: PreviewProvider {

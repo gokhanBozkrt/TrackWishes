@@ -22,6 +22,7 @@
 		F7DCC40828994A0C00E79FDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DCC40728994A0C00E79FDC /* Preview Assets.xcassets */; };
 		F7DCC41028994DAC00E79FDC /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC40E28994DAC00E79FDC /* Main.xcdatamodeld */; };
 		F7DCC4122899514400E79FDC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC4112899514400E79FDC /* DataController.swift */; };
+		F7F6457128AD8CB400343FC6 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */; };
 		F7F86416289DAC6700F39A40 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F86415289DAC6700F39A40 /* EditItemView.swift */; };
 		F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F86417289DB41E00F39A40 /* ItemRowView.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		F7DCC40F28994DAC00E79FDC /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		F7DCC4112899514400E79FDC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		F7DCC41328995E8500E79FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		F7F86415289DAC6700F39A40 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		F7F86417289DB41E00F39A40 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 				F7DCC40228994A0A00E79FDC /* ContentView.swift */,
 				F73E56802899926F00C56AE8 /* HomeView.swift */,
 				F73E56822899A21100C56AE8 /* ProjectsView.swift */,
+				F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */,
 				F733823928A0429700F75F8B /* ProjectHeaderView.swift */,
 				F7F86417289DB41E00F39A40 /* ItemRowView.swift */,
 				F79B621028A1B2F80010A05D /* EditProjectView.swift */,
@@ -185,6 +188,7 @@
 				F7667EB0289FB70A003160DD /* Binding-Onchange.swift in Sources */,
 				F79B621128A1B2F80010A05D /* EditProjectView.swift in Sources */,
 				F790259F289BB2B800262AA7 /* Project-CoreDataHelpers.swift in Sources */,
+				F7F6457128AD8CB400343FC6 /* SelectSomethingView.swift in Sources */,
 				F7DCC4122899514400E79FDC /* DataController.swift in Sources */,
 				F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */,
 				F7DCC40328994A0A00E79FDC /* ContentView.swift in Sources */,

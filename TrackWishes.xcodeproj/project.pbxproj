@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F72B632228AE216900F016DE /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B632128AE216900F016DE /* Bundle-Decodable.swift */; };
+		F72B632428AE2B1C00F016DE /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = F72B632328AE2B1C00F016DE /* Awards.json */; };
+		F72B632628AE2BBD00F016DE /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B632528AE2BBD00F016DE /* Award.swift */; };
+		F72B632828AE2D8D00F016DE /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B632728AE2D8D00F016DE /* AwardsView.swift */; };
 		F733823A28A0429700F75F8B /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733823928A0429700F75F8B /* ProjectHeaderView.swift */; };
 		F733823C28A0489B00F75F8B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F733823B28A0489B00F75F8B /* Colors.xcassets */; };
 		F73E56812899926F00C56AE8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E56802899926F00C56AE8 /* HomeView.swift */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F72B632128AE216900F016DE /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		F72B632328AE2B1C00F016DE /* Awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Awards.json; sourceTree = "<group>"; };
+		F72B632528AE2BBD00F016DE /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
+		F72B632728AE2D8D00F016DE /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
 		F733823928A0429700F75F8B /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		F733823B28A0489B00F75F8B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F73E56802899926F00C56AE8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -94,6 +102,10 @@
 				F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */,
 				F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */,
 				F74D855E28A836AA0082CD65 /* Sequence-Sorting.swift */,
+				F72B632128AE216900F016DE /* Bundle-Decodable.swift */,
+				F72B632728AE2D8D00F016DE /* AwardsView.swift */,
+				F72B632528AE2BBD00F016DE /* Award.swift */,
+				F72B632328AE2B1C00F016DE /* Awards.json */,
 				F7DCC40E28994DAC00E79FDC /* Main.xcdatamodeld */,
 				F7DCC40428994A0C00E79FDC /* Assets.xcassets */,
 				F733823B28A0489B00F75F8B /* Colors.xcassets */,
@@ -170,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F733823C28A0489B00F75F8B /* Colors.xcassets in Resources */,
+				F72B632428AE2B1C00F016DE /* Awards.json in Resources */,
 				F7DCC40828994A0C00E79FDC /* Preview Assets.xcassets in Resources */,
 				F7DCC40528994A0C00E79FDC /* Assets.xcassets in Resources */,
 			);
@@ -184,15 +197,18 @@
 			files = (
 				F73E56832899A21100C56AE8 /* ProjectsView.swift in Sources */,
 				F733823A28A0429700F75F8B /* ProjectHeaderView.swift in Sources */,
+				F72B632828AE2D8D00F016DE /* AwardsView.swift in Sources */,
 				F7DCC41028994DAC00E79FDC /* Main.xcdatamodeld in Sources */,
 				F7667EB0289FB70A003160DD /* Binding-Onchange.swift in Sources */,
 				F79B621128A1B2F80010A05D /* EditProjectView.swift in Sources */,
 				F790259F289BB2B800262AA7 /* Project-CoreDataHelpers.swift in Sources */,
 				F7F6457128AD8CB400343FC6 /* SelectSomethingView.swift in Sources */,
+				F72B632628AE2BBD00F016DE /* Award.swift in Sources */,
 				F7DCC4122899514400E79FDC /* DataController.swift in Sources */,
 				F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */,
 				F7DCC40328994A0A00E79FDC /* ContentView.swift in Sources */,
 				F74D855F28A836AA0082CD65 /* Sequence-Sorting.swift in Sources */,
+				F72B632228AE216900F016DE /* Bundle-Decodable.swift in Sources */,
 				F73E56812899926F00C56AE8 /* HomeView.swift in Sources */,
 				F7DCC40128994A0A00E79FDC /* TrackWishesApp.swift in Sources */,
 				F790259D289BB0ED00262AA7 /* Item-CoreDataHelpers.swift in Sources */,

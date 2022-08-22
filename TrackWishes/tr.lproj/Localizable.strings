@@ -1,0 +1,91 @@
+/* 
+  Localizable.strings
+  TrackWishes
+
+  Created by Gokhan Bozkurt on 22.08.2022.
+  
+*/
+
+/* GENERAL STRINGS */
+
+"OK" = "Tamam";
+"Delete" = "Sil";
+"Basic settings" = "Ayarlar";
+
+
+
+/* MAIN ACTIVITIES */
+
+"Home" = "Anasayfa";
+"Open" = "Açık";
+"Closed" = "Tamamlanan";
+"Awards" = "Ödüller";
+
+
+/* HOME VIEW */
+
+"Up next" = "En Önemli 3";
+"More to explore" = "Sonraki en önemli 7";
+
+
+/* PROJECTS VIEW */
+
+"Open Projects" = "Devam Eden Projeler";
+"Closed Projects" = "Tamalanan Projeler";
+"Add Project" = "Proje Ekle";
+"Add New Item" = "Yeni hedef Ekle";
+"There is nothing here right now" = "Gösterecek bir şey bulunamadı.";
+
+
+
+/* A button that shows a menu with the following options */
+"Sort" = "Sırala";
+"Sort items" = "Hedefleri Sırala"; /* The title of the menu */
+"Optimized" = "Default"; /* Sort using an optimized algorithm */
+"Creation Date" = "Oluşturulma Tarihi"; /* Sort by the date items were created */
+"Title" = "Başlık"; /* Sort by item title */
+
+/* Default names for a new project and a new item */
+"New Project" = "Yeni Proje";
+"New Item" = "Yeni Hedef";
+
+
+
+/* EDITING PROJECTS */
+"Edit Project" = "Projeyi Düzenle";
+"Project name" = "Proje İsmi";
+"Description of this project" = "Proje Açıklaması";
+"Custom project color" = "Proje Rengini Belirle";
+
+/* Options to close (mark as finished), open (mark as unfinished), or delete a project. */
+"Close this project" = "Close this project";
+"Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely." = "Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.";
+"Reopen this project" = "Reopen this project";
+"Delete this project" = "Delete this project";
+"Delete project?" = "Delete project?";
+"Are you sure you want to delete this project? You will also delete all the items it contains." = "Are you sure you want to delete this project? You will also delete all the items it contains.";
+
+/* EDITING ITEMS */
+"Edit Item" = "Edit Item";
+"Item name" = "Item name";
+"Description" = "Description";
+"Priority" = "Priority";
+"Low" = "Low";
+"Medium" = "Medium";
+"High" = "High";
+
+"Mark Completed" = "Mark Completed"; /* Mark this item as being completed (finished/accomplished) */
+
+
+
+/* AWARDS */
+
+"Locked" = "Kilitli";
+"Unlocked: %@" = "Açıldı: %@";
+
+
+
+/* OTHER STRINGS */
+
+/* Shown by default when the user hasn't select a project or item */
+"Please select something from the menu to begin." = "Please select something from the menu to begin.";

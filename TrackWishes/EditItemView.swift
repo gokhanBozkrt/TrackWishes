@@ -25,10 +25,10 @@ struct EditItemView: View {
     var body: some View {
         Form {
             Section {
-                TextField("Item Name", text: $title.onChange(update))
+                TextField("Item name", text: $title.onChange(update))
                 TextField("Description", text: $detail.onChange(update))
             } header: {
-                Text("Basic Settings")
+                Text("Basic settings")
             }
             Section {
                 Picker("Priority",selection: $priority.onChange(update)) {
@@ -43,7 +43,7 @@ struct EditItemView: View {
             Section {
               Toggle("Mark Completed",isOn: $completed.onChange(update))
             }
-        }.navigationTitle("Edit Form")
+        }.navigationTitle("Edit Item")
             .onDisappear(perform: dataController.save)
            // .onDisappear(perform: update)
         // Native swiftui way 

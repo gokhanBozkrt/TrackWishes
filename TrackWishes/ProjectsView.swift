@@ -17,8 +17,8 @@ struct ProjectsView: View {
     @State private var showSortOrder = false
     @State private var sortOrder = Item.SortOrder.optimized
     
-    static let openTag: String? = "Open"
-    static let closedTag: String? = "Closed"
+    static let openTag: String? = "Open Projects"
+    static let closedTag: String? = "Closed Projects"
     init(showClosedProjects: Bool) {
         self.showClosedProjects = showClosedProjects
         projects = FetchRequest<Project>(entity: Project.entity(),
@@ -31,7 +31,7 @@ struct ProjectsView: View {
         NavigationView {
             Group {
                 if projects.wrappedValue.isEmpty {
-                    Text("There is notthing here right now")
+                    Text("There is nothing here right now")
                         .foregroundColor(.secondary)
                 } else {
                     List {
@@ -99,13 +99,13 @@ struct ProjectsView: View {
                     }
                     
                 }
-                .confirmationDialog("Sort by...", isPresented: $showSortOrder) {
+                .confirmationDialog("Sort", isPresented: $showSortOrder) {
                     Button("Optimized") { sortOrder = .optimized  }
                     Button("Creation Date") { sortOrder =  .creationDate  }
                     Button("Title") { sortOrder = .title  }
                     Button("Cancel",role: .cancel) { }
                 } message: {
-                    Text("Sort by something")
+                    Text("Sort items")
                 }
             SelectSomethingView()
         }

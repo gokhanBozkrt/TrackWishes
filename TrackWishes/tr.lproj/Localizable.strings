@@ -11,7 +11,7 @@
 "OK" = "Tamam";
 "Delete" = "Sil";
 "Basic settings" = "Ayarlar";
-
+"Cancel" = "İptal";
 
 
 /* MAIN ACTIVITIES */
@@ -53,39 +53,39 @@
 
 /* EDITING PROJECTS */
 "Edit Project" = "Projeyi Düzenle";
-"Project name" = "Proje İsmi";
+"Project name" = "Proje Adı";
 "Description of this project" = "Proje Açıklaması";
 "Custom project color" = "Proje Rengini Belirle";
 
 /* Options to close (mark as finished), open (mark as unfinished), or delete a project. */
-"Close this project" = "Close this project";
-"Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely." = "Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.";
-"Reopen this project" = "Reopen this project";
-"Delete this project" = "Delete this project";
-"Delete project?" = "Delete project?";
-"Are you sure you want to delete this project? You will also delete all the items it contains." = "Are you sure you want to delete this project? You will also delete all the items it contains.";
+"Close this project" = "Projeyi Kapat";
+"Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely." = "Bir projeyi kapatmak onu açık olan projelerden alıp tamamlananlar sekmesine geçmesini sağlar. Silmek ise projecyi tamamen kaldırır.";
+"Reopen this project" = "Projeyi Yeniden aç";
+"Delete this project" = "Projeyi Sil";
+"Delete project?" = "Projeyi silmek istiyor musun?";
+"Are you sure you want to delete this project? You will also delete all the items it contains." = "Bu projeyi silmek istediğine emin misin? Projeyi ve içindeki herşeyi silmiş olacaksın.";
 
 /* EDITING ITEMS */
-"Edit Item" = "Edit Item";
-"Item name" = "Item name";
-"Description" = "Description";
-"Priority" = "Priority";
-"Low" = "Low";
-"Medium" = "Medium";
-"High" = "High";
+"Edit Item" = "Hedefi Düzenle";
+"Item name" = "Hedef Adı";
+"Description" = "Açıklama";
+"Priority" = "Öncelik";
+"Low" = "Az Önemli";
+"Medium" = "Orta Önemli";
+"High" = "Çok Önemli";
 
-"Mark Completed" = "Mark Completed"; /* Mark this item as being completed (finished/accomplished) */
+"Mark Completed" = "Tamamlandı olarak işaretle."; /* Mark this item as being completed (finished/accomplished) */
 
 
 
 /* AWARDS */
 
 "Locked" = "Kilitli";
-"Unlocked: %@" = "Açıldı: %@";
+"Unlocked: %@" = "Kilit Açıldı: %@";
 
 
 
 /* OTHER STRINGS */
 
 /* Shown by default when the user hasn't select a project or item */
-"Please select something from the menu to begin." = "Please select something from the menu to begin.";
+"Please select something from the menu to begin." = "Başlamak için menuden bir seçeden bir şeyler seçin.";

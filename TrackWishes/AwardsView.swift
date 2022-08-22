@@ -42,7 +42,7 @@ struct AwardsView: View {
             }
             .navigationTitle("Awards")
         }
-        .alert(dataController.hasEarned(award: selectedAward) ? "Unlocked:\(selectedAward.name)" : "Locked" , isPresented: $showingAlertDetails) {
+        .alert(dataController.hasEarned(award: selectedAward) ? "Unlocked: \(selectedAward.name)" : "Locked" , isPresented: $showingAlertDetails) {
             Button("OK") { }
         } message: {
             Text("\(selectedAward.description)")

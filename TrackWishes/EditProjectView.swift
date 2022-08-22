@@ -73,7 +73,7 @@ struct EditProjectView: View {
             }
         }.navigationTitle("Edit Project")
             .onDisappear(perform: dataConroller.save)
-            .alert("Delete Project?", isPresented: $showingDeleteConfirm) {
+            .alert("Delete project?", isPresented: $showingDeleteConfirm) {
                 Button("Cancel", role: .cancel) {  }
                 Button("Delete",role: .destructive) { delete() }
                

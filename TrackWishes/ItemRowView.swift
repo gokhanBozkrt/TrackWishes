@@ -23,6 +23,17 @@ struct ItemRowView: View {
                 .foregroundColor(.clear)
         }
     }
+    
+    var label: Text {
+        if item.completed {
+            return Text("\(item.itemTitle), completed.")
+        } else if item.priority == 3 {
+            return Text("\(item.itemTitle), high priority.")
+        } else {
+            return Text(item.itemTitle)
+        }
+    }
+    
     var body: some View {
         NavigationLink {
             EditItemView(item: item)
@@ -32,7 +43,7 @@ struct ItemRowView: View {
             } icon: {
                 icon
             }
-
+            .accessibilityLabel(label)
         }
     }
 }

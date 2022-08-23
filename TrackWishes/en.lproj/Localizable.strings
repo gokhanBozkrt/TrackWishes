@@ -26,7 +26,7 @@
 
 "Up next" = "Up next";
 "More to explore" = "More to explore";
-
+"%@, %lld items, %g%% complete." = "%@, %lld items, %g%% complete.";
 
 /* PROJECTS VIEW */
 
@@ -49,7 +49,8 @@
 "New Project" = "New Project";
 "New Item" = "New Item";
 
-
+"%@, completed." = "%@, completed.";
+"%@, high priority." = "%@, high priority.";
 
 /* EDITING PROJECTS */
 "Edit Project" = "Edit Project";
@@ -89,3 +90,19 @@
 
 /* Shown by default when the user hasn't select a project or item */
 "Please select something from the menu to begin." = "Please select something from the menu to begin.";
+
+
+// COLORS FOR ACCESEBILITY
+"Select a project color" = "Select a project color";
+"Pink" = "Pink";
+"Purple" = "Purple";
+"Red" = "Red";
+"Orange" = "Orange";
+"Gold" = "Gold";
+"Green" = "Green";
+"Teal" = "Teal";
+"Light Blue" = "Light Blue";
+"Dark Blue" = "Dark Blue";
+"Midnight" = "Midnight";
+"Dark Gray" = "Dark Gray";
+"Gray" = "Gray";

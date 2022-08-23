@@ -49,6 +49,8 @@ struct HomeView: View {
                                 .background(Color.systemGroupedBackground)
                                 .cornerRadius(10)
                                 .shadow(color: Color.black.opacity(0.5), radius: 5)
+                                .accessibilityElement(children: .ignore)
+                                .accessibilityLabel("\(project.projectTitle), \(project.projectItems.count) items, \(project.completionAmount * 100, specifier: "%g")% complete.")
                             }
                         }.padding([.horizontal,.top])
                             .fixedSize(horizontal: false, vertical: true)

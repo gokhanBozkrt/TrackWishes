@@ -27,7 +27,7 @@
 "Up next" = "En Önemli 3";
 "More to explore" = "Sonraki en önemli 7";
 
-
+"%@, %lld items, %g%% complete." = "%@, %lld hedef, %%g% tamamlandı.";
 /* PROJECTS VIEW */
 
 "Open Projects" = "Devam Eden Projeler";
@@ -49,7 +49,8 @@
 "New Project" = "Yeni Proje";
 "New Item" = "Yeni Hedef";
 
-
+"%@, completed." = "%@, tamamlandı.";
+"%@, high priority." = "%@, yüksek öncelik.";
 
 /* EDITING PROJECTS */
 "Edit Project" = "Projeyi Düzenle";
@@ -89,3 +90,19 @@
 
 /* Shown by default when the user hasn't select a project or item */
 "Please select something from the menu to begin." = "Başlamak için menuden bir seçeden bir şeyler seçin.";
+
+
+// COLORS FOR ACCESEBILITY
+"Select a project color" = "Proje için bir renk seç";
+"Pink" = "Pembe";
+"Purple" = "Mor";
+"Red" = "Kırmızı";
+"Orange" = "Turuncu";
+"Gold" = "Altın";
+"Green" = "Yeşil";
+"Teal" = "Teal";
+"Light Blue" = "Açık Mavi";
+"Dark Blue" = "Koyu Mavi";
+"Midnight" = "Gece Karanlığı";
+"Dark Gray" = "Koyu gri";
+"Gray" = "Gri";

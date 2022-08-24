@@ -5,8 +5,8 @@
 //  Created by Gokhan Bozkurt on 4.08.2022.
 //
 
-import Foundation
-import UIKit
+
+import SwiftUI
 
 extension Project {
     
@@ -26,6 +26,11 @@ extension Project {
     var projectItems: [Item] {
         items?.allObjects as? [Item] ?? []
         
+    }
+    
+    
+    var label: LocalizedStringKey {
+        LocalizedStringKey("\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete.")
     }
     
     

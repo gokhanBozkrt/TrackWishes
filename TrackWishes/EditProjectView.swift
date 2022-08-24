@@ -38,27 +38,7 @@ struct EditProjectView: View {
             Section {
                 LazyVGrid(columns: colorColums) {
                     ForEach(Project.colors, id: \.self) { item in
-                        ZStack {
-                            Color(item)
-                                .aspectRatio(1, contentMode: .fit)
-                                .cornerRadius(6)
-                            if item == color {
-                                Image(systemName: "checkmark.circle")
-                                    .foregroundColor(.white)
-                                    .font(.largeTitle)
-                            }
-                        }
-                        .onTapGesture {
-                            color = item
-                            update()
-                        }
-                        .accessibilityElement(children: .ignore)
-                        .accessibilityAddTraits(
-                            item == color
-                                ? [.isButton, .isSelected]
-                                : .isButton
-                        )
-                        .accessibilityLabel(LocalizedStringKey(item))
+                       colorButton(for: item)
                     }
                 }.padding(.vertical)
             } header: {
@@ -96,6 +76,30 @@ struct EditProjectView: View {
     func delete() {
         dataConroller.delete(project)
         dismiss()
+    }
+    
+    func colorButton(for item: String) -> some View {
+        ZStack {
+            Color(item)
+                .aspectRatio(1, contentMode: .fit)
+                .cornerRadius(6)
+            if item == color {
+                Image(systemName: "checkmark.circle")
+                    .foregroundColor(.white)
+                    .font(.largeTitle)
+            }
+        }
+        .onTapGesture {
+            color = item
+            update()
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityAddTraits(
+            item == color
+                ? [.isButton, .isSelected]
+                : .isButton
+        )
+        .accessibilityLabel(LocalizedStringKey(item))
     }
 }
 

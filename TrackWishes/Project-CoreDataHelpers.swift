@@ -23,16 +23,15 @@ extension Project {
         color ?? "Light Blue"
     }
 
-    var projectItems: [Item] {
-        items?.allObjects as? [Item] ?? []
-        
-    }
-    
-    
+
     var label: LocalizedStringKey {
         LocalizedStringKey("\(projectTitle), \(projectItems.count) items, \(completionAmount * 100, specifier: "%g")% complete.")
     }
     
+    var projectItems: [Item] {
+        items?.allObjects as? [Item] ?? []
+        
+    }
     
     var projectItemsDefaultSorted: [Item] {
         projectItems.sorted { first, second in

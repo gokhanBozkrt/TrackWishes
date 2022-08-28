@@ -53,8 +53,6 @@ struct ProjectsView: View {
                 }
             SelectSomethingView()
         }
-        
-        
     }
 
     func addProject() {

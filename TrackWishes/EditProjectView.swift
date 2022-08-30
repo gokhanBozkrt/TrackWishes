@@ -56,7 +56,7 @@ struct EditProjectView: View {
                 }
                 .tint(.red)
             } footer: {
-                Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.")
+                Text("Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.") // swiftlint:disable:this line_
             }
         }.navigationTitle("Edit Project")
             .onDisappear(perform: dataConroller.save)
@@ -65,7 +65,7 @@ struct EditProjectView: View {
                 Button("Delete",role: .destructive) { delete() }
                
             } message: {
-                Text("Are you sure you want to delete this project? You will also delete all the items it contains.")
+                Text("Are you sure you want to delete this project? You will also delete all the items it contains.") // swiftlint:disable:this line_
             }
     }
     func update() {

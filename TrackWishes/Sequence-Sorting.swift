@@ -10,7 +10,10 @@ import SwiftUI
 
 extension Sequence {
     // MARK: SWIFT WAY USING KEYPATH TO SORT
-    func sorted<Value>(by keyPath: KeyPath<Element,Value>, using areInIncreasingOrder: (Value,Value) throws -> Bool) rethrows -> [Element] {
+    func sorted<Value>(
+        by keyPath: KeyPath<Element,Value>,
+        using areInIncreasingOrder: (Value,Value) throws -> Bool
+    ) rethrows -> [Element] {
         try self.sorted {
             try areInIncreasingOrder($0[keyPath: keyPath], $1[keyPath: keyPath])
         }

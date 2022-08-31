@@ -26,7 +26,6 @@
 		F7DCC40128994A0A00E79FDC /* TrackWishesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC40028994A0A00E79FDC /* TrackWishesApp.swift */; };
 		F7DCC40328994A0A00E79FDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC40228994A0A00E79FDC /* ContentView.swift */; };
 		F7DCC40528994A0C00E79FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DCC40428994A0C00E79FDC /* Assets.xcassets */; };
-		F7DCC40828994A0C00E79FDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DCC40728994A0C00E79FDC /* Preview Assets.xcassets */; };
 		F7DCC41028994DAC00E79FDC /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC40E28994DAC00E79FDC /* Main.xcdatamodeld */; };
 		F7DCC4122899514400E79FDC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC4112899514400E79FDC /* DataController.swift */; };
 		F7E0CED428B608F300196E55 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CED328B608F300196E55 /* ItemListView.swift */; };
@@ -60,10 +59,9 @@
 		F7DCC40028994A0A00E79FDC /* TrackWishesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWishesApp.swift; sourceTree = "<group>"; };
 		F7DCC40228994A0A00E79FDC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7DCC40428994A0C00E79FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F7DCC40728994A0C00E79FDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7DCC40F28994DAC00E79FDC /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		F7DCC4112899514400E79FDC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
-		F7DCC41328995E8500E79FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7DCC41328995E8500E79FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7E0CED328B608F300196E55 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		F7E0CED528B60AF900196E55 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 		F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
@@ -82,6 +80,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F77F3D8828BF560D000E419A /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */,
+				F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */,
+				F72B632128AE216900F016DE /* Bundle-Decodable.swift */,
+				F7667EAF289FB70A003160DD /* Binding-Onchange.swift */,
+				F74D855E28A836AA0082CD65 /* Sequence-Sorting.swift */,
+				F7D6D5EB28B0C625005BEF23 /* Color-Addittion.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		F77F3D8928BF561B000E419A /* Locallization */ = {
+			isa = PBXGroup;
+			children = (
+				F7249F3228B3C3B30088491A /* Localizable.stringsdict */,
+				F7249F2E28B3C3AB0088491A /* Localizable.strings */,
+			);
+			path = Locallization;
+			sourceTree = "<group>";
+		};
+		F77F3D8A28BF5638000E419A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F7DCC40E28994DAC00E79FDC /* Main.xcdatamodeld */,
+				F7DCC41328995E8500E79FDC /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F77F3D8B28BF5B08000E419A /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				F77F3D8C28BF5B1A000E419A /* Home */,
+				F77F3D8D28BF5B40000E419A /* Projects */,
+				F77F3D8E28BF5B57000E419A /* Awards */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		F77F3D8C28BF5B1A000E419A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F73E56802899926F00C56AE8 /* HomeView.swift */,
+				F7E0CED328B608F300196E55 /* ItemListView.swift */,
+				F7E0CED528B60AF900196E55 /* ProjectSummaryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F77F3D8D28BF5B40000E419A /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				F73E56822899A21100C56AE8 /* ProjectsView.swift */,
+				F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */,
+				F733823928A0429700F75F8B /* ProjectHeaderView.swift */,
+				F7F86417289DB41E00F39A40 /* ItemRowView.swift */,
+				F79B621028A1B2F80010A05D /* EditProjectView.swift */,
+				F7F86415289DAC6700F39A40 /* EditItemView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		F77F3D8E28BF5B57000E419A /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				F72B632728AE2D8D00F016DE /* AwardsView.swift */,
+				F72B632528AE2BBD00F016DE /* Award.swift */,
+				F7249F3628B3C47F0088491A /* Awards.json */,
+			);
+			path = Awards;
+			sourceTree = "<group>";
+		};
 		F7DCC3F428994A0A00E79FDC = {
 			isa = PBXGroup;
 			children = (
@@ -103,31 +175,13 @@
 			children = (
 				F7DCC40028994A0A00E79FDC /* TrackWishesApp.swift */,
 				F7DCC40228994A0A00E79FDC /* ContentView.swift */,
-				F73E56802899926F00C56AE8 /* HomeView.swift */,
-				F7E0CED528B60AF900196E55 /* ProjectSummaryView.swift */,
-				F73E56822899A21100C56AE8 /* ProjectsView.swift */,
-				F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */,
-				F733823928A0429700F75F8B /* ProjectHeaderView.swift */,
-				F7F86417289DB41E00F39A40 /* ItemRowView.swift */,
-				F7E0CED328B608F300196E55 /* ItemListView.swift */,
-				F79B621028A1B2F80010A05D /* EditProjectView.swift */,
-				F7F86415289DAC6700F39A40 /* EditItemView.swift */,
-				F7667EAF289FB70A003160DD /* Binding-Onchange.swift */,
 				F7DCC4112899514400E79FDC /* DataController.swift */,
-				F790259C289BB0ED00262AA7 /* Item-CoreDataHelpers.swift */,
-				F790259E289BB2B800262AA7 /* Project-CoreDataHelpers.swift */,
-				F74D855E28A836AA0082CD65 /* Sequence-Sorting.swift */,
-				F72B632128AE216900F016DE /* Bundle-Decodable.swift */,
-				F7D6D5EB28B0C625005BEF23 /* Color-Addittion.swift */,
-				F72B632728AE2D8D00F016DE /* AwardsView.swift */,
-				F72B632528AE2BBD00F016DE /* Award.swift */,
-				F7249F2E28B3C3AB0088491A /* Localizable.strings */,
-				F7249F3228B3C3B30088491A /* Localizable.stringsdict */,
-				F7249F3628B3C47F0088491A /* Awards.json */,
-				F7DCC40E28994DAC00E79FDC /* Main.xcdatamodeld */,
+				F77F3D8B28BF5B08000E419A /* Activities */,
+				F77F3D8828BF560D000E419A /* Extentions */,
+				F77F3D8928BF561B000E419A /* Locallization */,
+				F77F3D8A28BF5638000E419A /* Configuration */,
 				F7DCC40428994A0C00E79FDC /* Assets.xcassets */,
 				F733823B28A0489B00F75F8B /* Colors.xcassets */,
-				F7DCC41328995E8500E79FDC /* Info.plist */,
 				F7DCC40628994A0C00E79FDC /* Preview Content */,
 			);
 			path = TrackWishes;
@@ -136,7 +190,6 @@
 		F7DCC40628994A0C00E79FDC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				F7DCC40728994A0C00E79FDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -203,7 +256,6 @@
 				F7249F2C28B3C3AB0088491A /* Localizable.strings in Resources */,
 				F733823C28A0489B00F75F8B /* Colors.xcassets in Resources */,
 				F7249F3428B3C47F0088491A /* Awards.json in Resources */,
-				F7DCC40828994A0C00E79FDC /* Preview Assets.xcassets in Resources */,
 				F7DCC40528994A0C00E79FDC /* Assets.xcassets in Resources */,
 				F7249F3028B3C3B30088491A /* Localizable.stringsdict in Resources */,
 			);
@@ -400,7 +452,7 @@
 				DEVELOPMENT_TEAM = P9MF2VU639;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrackWishes/Info.plist;
+				INFOPLIST_FILE = TrackWishes/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -431,7 +483,7 @@
 				DEVELOPMENT_TEAM = P9MF2VU639;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TrackWishes/Info.plist;
+				INFOPLIST_FILE = TrackWishes/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

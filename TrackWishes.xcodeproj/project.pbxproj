@@ -13,6 +13,8 @@
 		F72B632228AE216900F016DE /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B632128AE216900F016DE /* Bundle-Decodable.swift */; };
 		F72B632628AE2BBD00F016DE /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B632528AE2BBD00F016DE /* Award.swift */; };
 		F72B632828AE2D8D00F016DE /* AwardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72B632728AE2D8D00F016DE /* AwardsView.swift */; };
+		F72BA2DD28C7213F004B0A37 /* TrackWishesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BA2DC28C7213F004B0A37 /* TrackWishesTests.swift */; };
+		F72BA2E428C737A0004B0A37 /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72BA2E328C737A0004B0A37 /* AssetTest.swift */; };
 		F733823A28A0429700F75F8B /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F733823928A0429700F75F8B /* ProjectHeaderView.swift */; };
 		F733823C28A0489B00F75F8B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F733823B28A0489B00F75F8B /* Colors.xcassets */; };
 		F73E56812899926F00C56AE8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73E56802899926F00C56AE8 /* HomeView.swift */; };
@@ -35,6 +37,16 @@
 		F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F86417289DB41E00F39A40 /* ItemRowView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F72BA2DE28C7213F004B0A37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7DCC3F528994A0A00E79FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7DCC3FC28994A0A00E79FDC;
+			remoteInfo = TrackWishes;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F7249F2D28B3C3AB0088491A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F7249F2F28B3C3AD0088491A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -45,6 +57,9 @@
 		F72B632128AE216900F016DE /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		F72B632528AE2BBD00F016DE /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		F72B632728AE2D8D00F016DE /* AwardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsView.swift; sourceTree = "<group>"; };
+		F72BA2DA28C7213F004B0A37 /* TrackWishesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackWishesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F72BA2DC28C7213F004B0A37 /* TrackWishesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackWishesTests.swift; sourceTree = "<group>"; };
+		F72BA2E328C737A0004B0A37 /* AssetTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTest.swift; sourceTree = "<group>"; };
 		F733823928A0429700F75F8B /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		F733823B28A0489B00F75F8B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F73E56802899926F00C56AE8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -70,6 +85,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F72BA2D728C7213F004B0A37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7DCC3FA28994A0A00E79FDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F72BA2DB28C7213F004B0A37 /* TrackWishesTests */ = {
+			isa = PBXGroup;
+			children = (
+				F72BA2DC28C7213F004B0A37 /* TrackWishesTests.swift */,
+				F72BA2E328C737A0004B0A37 /* AssetTest.swift */,
+			);
+			path = TrackWishesTests;
+			sourceTree = "<group>";
+		};
 		F77F3D8828BF560D000E419A /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				F7DCC3FF28994A0A00E79FDC /* TrackWishes */,
+				F72BA2DB28C7213F004B0A37 /* TrackWishesTests */,
 				F7DCC3FE28994A0A00E79FDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -166,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				F7DCC3FD28994A0A00E79FDC /* TrackWishes.app */,
+				F72BA2DA28C7213F004B0A37 /* TrackWishesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,6 +230,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F72BA2D928C7213F004B0A37 /* TrackWishesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F72BA2E228C7213F004B0A37 /* Build configuration list for PBXNativeTarget "TrackWishesTests" */;
+			buildPhases = (
+				F72BA2D628C7213F004B0A37 /* Sources */,
+				F72BA2D728C7213F004B0A37 /* Frameworks */,
+				F72BA2D828C7213F004B0A37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F72BA2DF28C7213F004B0A37 /* PBXTargetDependency */,
+			);
+			name = TrackWishesTests;
+			productName = TrackWishesTests;
+			productReference = F72BA2DA28C7213F004B0A37 /* TrackWishesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F7DCC3FC28994A0A00E79FDC /* TrackWishes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7DCC40B28994A0C00E79FDC /* Build configuration list for PBXNativeTarget "TrackWishes" */;
@@ -224,6 +275,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					F72BA2D928C7213F004B0A37 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = F7DCC3FC28994A0A00E79FDC;
+					};
 					F7DCC3FC28994A0A00E79FDC = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -244,11 +299,19 @@
 			projectRoot = "";
 			targets = (
 				F7DCC3FC28994A0A00E79FDC /* TrackWishes */,
+				F72BA2D928C7213F004B0A37 /* TrackWishesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F72BA2D828C7213F004B0A37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7DCC3FB28994A0A00E79FDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -264,6 +327,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F72BA2D628C7213F004B0A37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F72BA2E428C737A0004B0A37 /* AssetTest.swift in Sources */,
+				F72BA2DD28C7213F004B0A37 /* TrackWishesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F7DCC3F928994A0A00E79FDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +365,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F72BA2DF28C7213F004B0A37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7DCC3FC28994A0A00E79FDC /* TrackWishes */;
+			targetProxy = F72BA2DE28C7213F004B0A37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F7249F2E28B3C3AB0088491A /* Localizable.strings */ = {
@@ -325,6 +405,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F72BA2E028C7213F004B0A37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9MF2VU639;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozkurt.TrackWishesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackWishes.app/TrackWishes";
+			};
+			name = Debug;
+		};
+		F72BA2E128C7213F004B0A37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P9MF2VU639;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bozkurt.TrackWishesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackWishes.app/TrackWishes";
+			};
+			name = Release;
+		};
 		F7DCC40928994A0C00E79FDC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -506,6 +622,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F72BA2E228C7213F004B0A37 /* Build configuration list for PBXNativeTarget "TrackWishesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F72BA2E028C7213F004B0A37 /* Debug */,
+				F72BA2E128C7213F004B0A37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F7DCC3F828994A0A00E79FDC /* Build configuration list for PBXProject "TrackWishes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

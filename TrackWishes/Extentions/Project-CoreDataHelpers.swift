@@ -54,6 +54,18 @@ extension Project {
         }
     }
     
+    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+        
+        switch sortOrder {
+        case .optimized:
+            return projectItemsDefaultSorted
+        case .title:
+            return projectItems.sorted(by: \.itemTitle)
+        case .creationDate:
+            return projectItems.sorted(by: \.itemCreationDate)
+        }
+    }
+    
     var completionAmount: Double {
         let originalItems = items?.allObjects as? [Item] ?? []
         guard originalItems.isEmpty == false else { return 0 }
@@ -73,16 +85,5 @@ extension Project {
         project.creationDate = Date()
         
         return project
-    }
-    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
-        
-        switch sortOrder {
-        case .optimized:
-            return projectItemsDefaultSorted
-        case .title:
-            return projectItems.sorted(by: \.itemTitle)
-        case .creationDate:
-            return projectItems.sorted(by: \.itemCreationDate)
-        }
     }
 }

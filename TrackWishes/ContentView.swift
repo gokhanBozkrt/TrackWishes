@@ -35,7 +35,7 @@ struct ContentView: View {
                     Image(systemName: "rosette")
                     Text("Awards")
                 }
-        }
+         }
     }
 }
 

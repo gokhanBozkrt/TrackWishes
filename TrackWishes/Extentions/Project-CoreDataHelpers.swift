@@ -75,13 +75,13 @@ extension Project {
     }
     
     static var example: Project {
-        let controller = DataController(inMemory: true)
+        let controller = DataController.preview
         let viewContext = controller.container.viewContext
         
         let project = Project(context: viewContext)
         project.title = "Example Project"
         project.detail = "This is an example project"
-        project.closed = false
+        project.closed = true
         project.creationDate = Date()
         
         return project

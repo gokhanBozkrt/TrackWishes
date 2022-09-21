@@ -35,6 +35,12 @@ class DataController: ObservableObject {
             if let error = error {
                 fatalError("Fatal error loading store \(error.localizedDescription)")
             }
+            #if DEBUG
+            if CommandLine.arguments.contains("enable-testing") {
+                self.deleteAll()
+                UIView.setAnimationsEnabled(false)
+            }
+            #endif
         }
     }
     // }() lazy closure
@@ -84,6 +90,7 @@ class DataController: ObservableObject {
     }
     /// Saves our Core Data context iff there are changes. This silently ignores
     /// any errors caused by saving, but this should be fine because all our attributes are optional.
+    
     func save() {
         if container.viewContext.hasChanges {
             try? container.viewContext.save()

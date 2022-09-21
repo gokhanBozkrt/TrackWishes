@@ -34,7 +34,33 @@ struct ProjectsView: View {
                     Text("There is nothing here right now")
                         .foregroundColor(.secondary)
                 } else {
-                  projectsLists
+                    List {
+                        ForEach(projects.wrappedValue) { project in
+                            Section {
+                                ForEach(project.projectItems(using: sortOrder)) { item in
+                                    ItemRowView(project: project, item: item)
+                                }
+                                .onDelete { offsets in
+                                    delete(offsets, from: project)
+                                    // this provides you to delete immiediately from core data
+                                    //   dataController.container.viewContext.processPendingChanges()
+                                    
+                                }
+                                if showClosedProjects == false {
+                                    Button {
+                                        addItem(to: project)
+                                        
+                                    } label: {
+                                        Label("Add New Item",systemImage: "plus")
+                                    }
+                                    
+                                }
+                            } header: {
+                                ProjectHeaderView(project: project)
+                            }
+                        }
+                    }
+                    .listStyle(.insetGrouped)
                 }
             }
                 .navigationTitle(showClosedProjects ? "Closed Projects" :  "Open Projects")
@@ -93,41 +119,12 @@ struct ProjectsView_Previews: PreviewProvider {
 
 
 extension ProjectsView {
-    var projectsLists: some View {
-        List {
-            ForEach(projects.wrappedValue) { project in
-                Section {
-                    ForEach(project.projectItems(using: sortOrder)) { item in
-                        ItemRowView(project: project, item: item)
-                    }
-                    .onDelete { offsets in
-                        delete(offsets, from: project)
-                        // this provides you to delete immiediately from core data
-                        //   dataController.container.viewContext.processPendingChanges()
-                        
-                    }
-                    if showClosedProjects == false {
-                        Button {
-                            addItem(to: project)
-                            
-                        } label: {
-                            Label("Add New Item",systemImage: "plus")
-                        }
-                        
-                    }
-                } header: {
-                    ProjectHeaderView(project: project)
-                }
-            }
-        }
-        .listStyle(.insetGrouped)
-    }
-    
+  
     var addProjectToolbar: some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
             if showClosedProjects == false {
                 Button(action: addProject) {
-                    Label("Add Project",systemImage: "plus")
+                    Label("Add New Project",systemImage: "plus")
                 }
             }
         }

@@ -23,11 +23,12 @@ import XCTest
          app.buttons["Open"].tap()
          XCTAssertEqual(app.tables.cells.count, 0,"There should be no list rows initially")
          
-         for tapCount in 1...5 {
-             app.buttons["Add"].tap()
-             XCTAssertEqual(app.tables.cells.count, tapCount,"There should be \(tapCount) list row(s) initially.")
-         }
+         for _ in 1...5 {
+             app.buttons["Add New Project"].tap()
+            }
+         XCTAssertEqual(app.tables.cells.count, 5,"There should be 5 list row(s) initially.")
      }
+     
      func testAddingItemInsertsRows() {
          app.buttons["Open"].tap()
          XCTAssertEqual(app.tables.cells.count, 0,"There should be no list rows initially")
@@ -89,6 +90,53 @@ import XCTest
              
          }
      }
+     // Test that opening and closing projects moves them between tabs.
+     func testOpeningAndClosingProjectsMovingTabs() {
+         app.buttons["Open"].tap()
+         app.buttons["Add New Project"].tap()
+         
+         app.buttons["Compose"].tap()
+         app.buttons["Close this project"].tap()
+   
+         app.buttons["Open"].tap()
+         XCTAssertEqual(app.tables.cells.count, 0,"There should be 1 list row after adding a project.")
+         
+     }
      
+      // Test that unlocking awards shows a different alert.
+     
+     func testUnlockingAwardsShowsDifferentAlerts() {
+         app.buttons["Open"].tap()
+         XCTAssertEqual(app.tables.cells.count, 0,"There should be no list rows initially")
+         
+         app.buttons["Add New Project"].tap()
+         XCTAssertEqual(app.tables.cells.count, 1,"There should be 1 list row after adding a project.")
+         
+         for _ in 1...20 {
+             app.buttons["Add New Item"].tap()
+         }
+         
+         app.buttons["Awards"].tap()
+         
+         for award in app.scrollViews.buttons.allElementsBoundByIndex {
+             award.tap()
+             XCTAssertFalse(app.alerts["Locked"].exists,"There should be a locked alert showing for awards.")
+             app.buttons["OK"].tap()
+             break
+         }
+     }
+     // TODO:  Test that swipe to delete works.
+     func testSwipeDeleteWorks() {
+         app.buttons["Open"].tap()
+         XCTAssertEqual(app.tables.cells.count, 0,"There should be no list rows initially")
+         
+         app.buttons["Add New Project"].tap()
+         XCTAssertEqual(app.tables.cells.count, 1,"There should be 1 list row after adding a project.")
+         
+         for _ in 1...20 {
+             app.buttons["Add New Item"].tap()
+         }
+         
+     }
 }
 

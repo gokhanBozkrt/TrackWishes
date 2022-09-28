@@ -125,7 +125,7 @@ import XCTest
              break
          }
      }
-     // TODO:  Test that swipe to delete works.
+     // Test that swipe to delete works.
      func testSwipeDeleteWorks() {
          app.buttons["Open"].tap()
          XCTAssertEqual(app.tables.cells.count, 0,"There should be no list rows initially")
@@ -133,10 +133,12 @@ import XCTest
          app.buttons["Add New Project"].tap()
          XCTAssertEqual(app.tables.cells.count, 1,"There should be 1 list row after adding a project.")
          
-         for _ in 1...20 {
-             app.buttons["Add New Item"].tap()
-         }
-         
+         app.buttons["Add New Item"].tap()
+         XCTAssertEqual(app.tables.cells.count, 2,"There should be 6 list row after adding a project.")
+     
+         app.buttons["New Item"].swipeLeft()
+         app.buttons["Delete"].tap()
+         XCTAssertEqual(app.tables.cells.count, 1,"There should be 6 list row after adding a project.")
      }
 }
 

@@ -92,8 +92,10 @@ class DataController: ObservableObject {
     /// any errors caused by saving, but this should be fine because all our attributes are optional.
     
     func save() {
-        if container.viewContext.hasChanges {
-            try? container.viewContext.save()
+        DispatchQueue.main.async {
+            if self.container.viewContext.hasChanges {
+                try? self.container.viewContext.save()
+            }
         }
     }
     

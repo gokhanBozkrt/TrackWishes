@@ -41,6 +41,7 @@
 		F7DCC4122899514400E79FDC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DCC4112899514400E79FDC /* DataController.swift */; };
 		F7E0CED428B608F300196E55 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CED328B608F300196E55 /* ItemListView.swift */; };
 		F7E0CED628B60AF900196E55 /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E0CED528B60AF900196E55 /* ProjectSummaryView.swift */; };
+		F7EDB8D228E8CB45005DA9E3 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EDB8D128E8CB45005DA9E3 /* ProjectViewModel.swift */; };
 		F7F6457128AD8CB400343FC6 /* SelectSomethingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */; };
 		F7F86416289DAC6700F39A40 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F86415289DAC6700F39A40 /* EditItemView.swift */; };
 		F7F86418289DB41E00F39A40 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F86417289DB41E00F39A40 /* ItemRowView.swift */; };
@@ -105,6 +106,7 @@
 		F7DCC41328995E8500E79FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7E0CED328B608F300196E55 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		F7E0CED528B60AF900196E55 /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
+		F7EDB8D128E8CB45005DA9E3 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		F7F86415289DAC6700F39A40 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		F7F86417289DB41E00F39A40 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				F73E56822899A21100C56AE8 /* ProjectsView.swift */,
+				F7EDB8D128E8CB45005DA9E3 /* ProjectViewModel.swift */,
 				F7F6457028AD8CB400343FC6 /* SelectSomethingView.swift */,
 				F733823928A0429700F75F8B /* ProjectHeaderView.swift */,
 				F7F86417289DB41E00F39A40 /* ItemRowView.swift */,
@@ -454,6 +457,7 @@
 				F7667EB0289FB70A003160DD /* Binding-Onchange.swift in Sources */,
 				F79B621128A1B2F80010A05D /* EditProjectView.swift in Sources */,
 				F790259F289BB2B800262AA7 /* Project-CoreDataHelpers.swift in Sources */,
+				F7EDB8D228E8CB45005DA9E3 /* ProjectViewModel.swift in Sources */,
 				F7F6457128AD8CB400343FC6 /* SelectSomethingView.swift in Sources */,
 				F72B632628AE2BBD00F016DE /* Award.swift in Sources */,
 				F7DCC4122899514400E79FDC /* DataController.swift in Sources */,

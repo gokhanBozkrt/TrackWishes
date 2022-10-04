@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F71FCCEA28C7AE9800A50125 /* AwardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71FCCE928C7AE9800A50125 /* AwardsTests.swift */; };
+		F723038D28E9F5D20093604E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F723038C28E9F5D20093604E /* HomeViewModel.swift */; };
 		F7249F2C28B3C3AB0088491A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7249F2E28B3C3AB0088491A /* Localizable.strings */; };
 		F7249F3028B3C3B30088491A /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F7249F3228B3C3B30088491A /* Localizable.stringsdict */; };
 		F7249F3428B3C47F0088491A /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = F7249F3628B3C47F0088491A /* Awards.json */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		F71FCCE928C7AE9800A50125 /* AwardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsTests.swift; sourceTree = "<group>"; };
+		F723038C28E9F5D20093604E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		F7249F2D28B3C3AB0088491A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F7249F2F28B3C3AD0088491A /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F7249F3128B3C3B30088491A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				F73E56802899926F00C56AE8 /* HomeView.swift */,
+				F723038C28E9F5D20093604E /* HomeViewModel.swift */,
 				F7E0CED528B60AF900196E55 /* ProjectSummaryView.swift */,
 			);
 			path = Home;
@@ -452,6 +455,7 @@
 				F733823A28A0429700F75F8B /* ProjectHeaderView.swift in Sources */,
 				F7E0CED428B608F300196E55 /* ItemListView.swift in Sources */,
 				F72B632828AE2D8D00F016DE /* AwardsView.swift in Sources */,
+				F723038D28E9F5D20093604E /* HomeViewModel.swift in Sources */,
 				F7DCC41028994DAC00E79FDC /* Main.xcdatamodeld in Sources */,
 				F7D6D5EC28B0C625005BEF23 /* Color-Addittion.swift in Sources */,
 				F7667EB0289FB70A003160DD /* Binding-Onchange.swift in Sources */,

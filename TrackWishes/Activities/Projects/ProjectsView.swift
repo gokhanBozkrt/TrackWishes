@@ -10,9 +10,9 @@ import SwiftUI
 struct ProjectsView: View {
     static let openTag: String? = "Open Projects"
     static let closedTag: String? = "Closed Projects"
-
     @State private var showSortOrder = false
     @StateObject var viewModel: ViewModel
+    
     var body: some View {
         NavigationView {
             Group {
@@ -73,7 +73,7 @@ extension ProjectsView {
                         Button {
                             withAnimation {
                                 viewModel.addItem(to: project)
-                            }
+                                }
                         } label: {
                             Label("Add New Item",systemImage: "plus")
                         }
@@ -90,7 +90,9 @@ extension ProjectsView {
         ToolbarItem(placement: .navigationBarTrailing) {
             if viewModel.showClosedProjects == false {
                     Button {
-                        viewModel.addProject()
+                        withAnimation(.default) {
+                            viewModel.addProject()
+                        }
                         
                     } label: {
                         Label("Add New Project",systemImage: "plus")

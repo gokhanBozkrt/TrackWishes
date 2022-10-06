@@ -26,7 +26,7 @@ extension HomeView {
             projectRequest.predicate = NSPredicate(format: "closed = false")
             
             projectsController = NSFetchedResultsController(fetchRequest: projectRequest, managedObjectContext: dataController.container.viewContext, sectionNameKeyPath: nil, cacheName: nil)
-            
+          
             
             let itemRequest: NSFetchRequest<Item> = Item.fetchRequest()
             let completedPredicate = NSPredicate(format: "completed = false")
@@ -53,7 +53,8 @@ extension HomeView {
         func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
             if let newItems = controller.fetchedObjects as? [Item] {
                 items = newItems
-            } else if let newProjects = controller.fetchedObjects as? [Project] {
+            }
+             if let newProjects = controller.fetchedObjects as? [Project] {
                 projects = newProjects
             }
         }

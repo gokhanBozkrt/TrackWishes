@@ -18,6 +18,7 @@ class ExtentionTests: XCTestCase {
     }
 
     func testSequenceSort() {
+        // swifltint: disable: next nesting
         struct Product: Equatable {
             let name: String
         }

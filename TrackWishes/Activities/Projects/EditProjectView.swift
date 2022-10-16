@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EditProjectView: View {
-    let project: Project
+    @ObservedObject var  project: Project
     @EnvironmentObject var dataConroller: DataController
     @Environment(\.dismiss) var dismiss
     

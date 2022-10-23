@@ -17,6 +17,7 @@ extension HomeView {
         var dataController: DataController
         @Published var projects = [Project]()
         @Published var items = [Item]()
+        @Published var selectedItem: Item?
         
         init(dataController: DataController) {
             self.dataController = dataController
@@ -63,12 +64,16 @@ extension HomeView {
             items.prefix(3)
         }
         var moreToExplore: ArraySlice<Item> {
-            items.dropLast(3)
+            items.dropFirst(3)
         }
         
         func addSampleData() {
             dataController.deleteAll()
             try? dataController.createSampleData()
+        }
+        
+        func selectItem(with identifier: String) {
+            selectedItem = dataController.item(with: identifier)
         }
     }
 }

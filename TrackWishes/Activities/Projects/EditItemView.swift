@@ -44,7 +44,7 @@ struct EditItemView: View {
               Toggle("Mark Completed",isOn: $completed.onChange(update))
             }
         }.navigationTitle("Edit Item")
-            .onDisappear(perform: dataController.save)
+            .onDisappear(perform: save)
            // .onDisappear(perform: update)
         // Native swiftui way 
         //    .onChange(of: title) { _ in update() }
@@ -59,6 +59,9 @@ struct EditItemView: View {
         item.detail = detail
         item.priority = Int16(priority)
         item.completed = completed
+    }
+    func save() {
+        dataController.update(item)
     }
 }
 

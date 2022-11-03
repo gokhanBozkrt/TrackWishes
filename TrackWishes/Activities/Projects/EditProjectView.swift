@@ -17,6 +17,12 @@ struct EditProjectView: View {
     @State private var color: String
     @State private var showingDeleteConfirm = false
     @State private var engine = try? CHHapticEngine()
+    
+    @State private var showingErrorNotification = false
+    
+    
+    @State private var remindMe: Bool
+    @State private var reminderTime: Date
     let colorColums = [
         GridItem(.adaptive(minimum: 44))
     ]
@@ -25,6 +31,14 @@ struct EditProjectView: View {
         _title = State(wrappedValue: project.projectTitle)
         _detail = State(wrappedValue: project.projectDetail)
         _color = State(wrappedValue: project.projectColor)
+        
+        if let projectReminderTime = project.reminderTime {
+            _reminderTime = State(wrappedValue: projectReminderTime)
+            _remindMe = State(wrappedValue: true)
+        } else {
+            _reminderTime = State(wrappedValue: Date())
+            _remindMe = State(wrappedValue: false)
+        }
     }
 
     var body: some View {
@@ -44,6 +58,21 @@ struct EditProjectView: View {
                 }.padding(.vertical)
             } header: {
                 Text("Custom project color")
+            }
+            
+            Section {
+                Toggle("Show Reminders", isOn: $remindMe.animation().onChange(update))
+                    .alert("Oppps!",isPresented: $showingErrorNotification) {
+                        Button("Check Settings") { showAppSettings() }
+                        Button("Cancel", role: .cancel) {  }
+                    } message: {
+                        Text("There was a problem.Please check you have notifications enabled.")
+                    }
+                if remindMe {
+                    DatePicker("Reminder Time", selection: $reminderTime.onChange(update), displayedComponents: .hourAndMinute)
+                }
+            } header: {
+                Text("Project Reminders")
             }
             
             Section() {
@@ -70,6 +99,21 @@ struct EditProjectView: View {
         project.title = title
         project.detail = detail
         project.color = color
+        
+        
+        if remindMe {
+            project.reminderTime = reminderTime
+            dataConroller.addReminders(for: project) { success in
+                if success == false {
+                    project.reminderTime = nil
+                    remindMe = false
+                    showingErrorNotification = true
+                }
+            }
+        } else {
+            project.reminderTime = nil
+            dataConroller.removeReminders(for: project)
+        }
     }
     func delete() {
         dataConroller.delete(project)
@@ -134,6 +178,14 @@ struct EditProjectView: View {
             } catch {
                 
             }
+        }
+    }
+    func showAppSettings() {
+        guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+        if UIApplication.shared.canOpenURL(settingsUrl) {
+            UIApplication.shared.open(settingsUrl)
         }
     }
 }

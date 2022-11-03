@@ -58,6 +58,14 @@
 "Description of this project" = "Proje Açıklaması";
 "Custom project color" = "Proje Rengini Belirle";
 
+
+"Project Reminders" = "Proje Hatırlatıcısı";
+"Show Reminders" = "Hatırlatıcıyı Göster";
+"Oppps!" = "Oppps!";
+"There was a problem.Please check you have notifications enabled." = "Bir problem var ayarlardan bildirimleri aç.";
+"Check Settings" = "Ayarları kontrol et";
+"Reminder Time" = "Bildirim Zamanı";
+
 /* Options to close (mark as finished), open (mark as unfinished), or delete a project. */
 "Close this project" = "Projeyi Kapat";
 "Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely." = "Bir projeyi kapatmak onu açık olan projelerden alıp tamamlananlar sekmesine geçmesini sağlar. Silmek ise projecyi tamamen kaldırır.";

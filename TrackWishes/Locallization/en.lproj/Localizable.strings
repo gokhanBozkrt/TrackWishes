@@ -58,6 +58,15 @@
 "Description of this project" = "Description of this project";
 "Custom project color" = "Custom project color";
 
+
+
+"Project Reminders" = "Project Reminders";
+"Show Reminders" = "Show Reminders";
+"Oops!" = "Oops!";
+"There was a problem.Please check you have notifications enabled." = "There was a problem.Please check you have notifications enabled.";
+"Check Settings" = "Check Settings";
+"Reminder Time" = "Reminder Time";
+
 /* Options to close (mark as finished), open (mark as unfinished), or delete a project. */
 "Close this project" = "Close this project";
 "Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely." = "Closing a project moves it from the Open to Closed tab; deleting it removes the project entirely.";
